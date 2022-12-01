@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TodoSQLite.Views.TodoItemPage"
-             Title="TodoItemPage"
+             Title="Calculator"
              xmlns:models="clr-namespace:TodoSQLite.Models"
              x:DataType="models:TodoItem">
     <ScrollView>
@@ -27,7 +27,7 @@
 
             <BoxView BackgroundColor="{StaticResource Black}" HeightRequest="1"
                  Grid.Row="0" VerticalOptions="End"
-                 Grid.ColumnSpan="4"
+                 Grid.ColumnSpan="2"
                  />
 
             <Button Text="C" Grid.Row="1" Grid.Column="0"
