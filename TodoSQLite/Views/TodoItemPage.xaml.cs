@@ -53,7 +53,7 @@ public partial class TodoItemPage : ContentPage
     {
         if (Item.ID == 0)
             return;
-        await database.DeleteItemAsync(Item);
+        await database.DeleteItemAsync(item);
         await Shell.Current.GoToAsync("..");
     }
 

@@ -1,16 +1,19 @@
 ﻿using System.Collections.ObjectModel;
 using TodoSQLite.Data;
 using TodoSQLite.Models;
+using TodoSQLite.Views;
 
 namespace TodoSQLite.Views;
 
 public partial class TodoListPage : ContentPage
 {
     TodoItemDatabase database;
+    private TodoItem Item;
+
     public ObservableCollection<TodoItem> Items { get; set; } = new();
     public TodoListPage(TodoItemDatabase todoItemDatabase)
-	{
-		InitializeComponent();
+    {
+        InitializeComponent();
         database = todoItemDatabase;
         BindingContext = this;
     }
@@ -36,7 +39,8 @@ public partial class TodoListPage : ContentPage
         });
     }
 
-    private async void  CollectionView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+
+    private async void CollectionView_SelectionChanged(object sender, SelectionChangedEventArgs e)
     {
         if (e.CurrentSelection.FirstOrDefault() is not TodoItem item)
             return;
@@ -46,5 +50,7 @@ public partial class TodoListPage : ContentPage
             ["Item"] = item
         });
     }
+
+   
 }
 

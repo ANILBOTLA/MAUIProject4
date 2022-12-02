@@ -14,18 +14,19 @@
                   SelectionChanged="CollectionView_SelectionChanged">
             <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="models:TodoItem">
-                        <Grid ColumnDefinitions="*, Auto" Padding="20">
-                            <Label Text="{Binding Name}"
+                    <Grid ColumnDefinitions="*, Auto" Padding="20">
+                        <Label Text="{Binding Name}"
                                    VerticalTextAlignment="Center"/>
-                            <Label Text="✔️"
+                        <Label Text="✔️"
                                    Grid.Column="1"
                                    VerticalTextAlignment="Center"
                                    IsVisible="{Binding Done}"/>
-                        </Grid>
+                    </Grid>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
         <Button Grid.Row="1" Text="Click Me To Calculate" Clicked="OnItemAdded"
                 Margin="20"/>
+
     </Grid>
 </ContentPage>
