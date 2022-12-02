@@ -51,10 +51,13 @@ public partial class TodoItemPage : ContentPage
 
     async void OnDeleteClicked(object sender, EventArgs e)
     {
-        if (Item.ID == 0)
-            return;
-        await database.DeleteItemAsync(item);
-        await Shell.Current.GoToAsync("..");
+        Expressions.Add(CurrentCalculation.Text + " = " + resultText.Text);
+        for (int i = 0; i < Expressions.Count; i++)
+        {
+            Item.Name = "Deleted";
+        }
+        object value = await database.UpdateAsync(Item);
+       
     }
 
     async void OnCancelClicked(object sender, EventArgs e)
