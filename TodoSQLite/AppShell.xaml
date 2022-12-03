@@ -5,20 +5,13 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:views="clr-namespace:TodoSQLite.Views"
     Shell.FlyoutBehavior="Flyout">
-    <TabBar>
-        <Tab Title="Calculator">
-            <ShellContent
-                Title="Calculator"
-                ContentTemplate="{DataTemplate views:TodoItemPage}"
-                Shell.TitleColor="CadetBlue"
-                Shell.BackgroundColor="Black" />
-        </Tab>
-        <Tab Title="History">
-            <ShellContent
-                Title="History"
-                ContentTemplate="{DataTemplate views:TodoListPage}"
-                Shell.TitleColor="CadetBlue"
-                Shell.BackgroundColor="Black" />
-        </Tab>
-    </TabBar>
+
+    <ShellContent
+        Title="HISTORY"
+        ContentTemplate="{DataTemplate views:TodoListPage}"
+        Route="TodoList" />
+    <ShellContent
+        Title="CALCULATOR"
+        ContentTemplate="{DataTemplate views:TodoItemPage}"
+        Route="TodoItem" />
 </Shell>

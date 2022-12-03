@@ -56,11 +56,8 @@ public class TodoItemDatabase
     public async Task<List<TodoItem>> UpdateAsync(TodoItem item)
     {
         await Init();
-       
-           return await Database.QueryAsync<TodoItem>("DELETE FROM [TodoItem]");
 
-
-
+        return await Database.QueryAsync<TodoItem>("DELETE FROM [TodoItem]");
     }
 
 
