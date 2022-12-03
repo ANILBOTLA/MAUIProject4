@@ -12,6 +12,10 @@ GitHub Repo Link:-https://github.com/ANILBOTLA/MAUIProject4
 
 YouTube Link:https://youtu.be/7Q-H3IzUWYI
 
+Srinivas Git:https://github.com/SrinivasareddyAvuluri/Project-4.git
+
+Harish Git: https://github.com/HarishReddyNadavaluru/Project4.git
+
 ![Screenshot (42)](https://user-images.githubusercontent.com/52151612/205424182-1da1899a-ec63-4e22-9840-bbc70b713da8.png)
 
 ![Screenshot (43)](https://user-images.githubusercontent.com/52151612/205424192-086ff4ca-744d-4c2d-a3c0-3b9aa8aba886.png)
